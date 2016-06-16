@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Jayrex Acilo | Web Design & Development</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+	<header>
+		<div class="wrapper">
+			<a href="#"><h1>JayrexAcilo</h1></a>
+			<nav>
+				<a class="dropdown-menu"></a>
+				<h2>Main Navigation</h2>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+
+	<div id="main-banner">
+		<!--<div class="wrapper">-->
+			
+			<h1>
+				Hello!
+			</h1>
+			<hr>
+			<center><p>I'm a Web Developer</p></center>
+		<!--</div>-->
+	</div>
+
+	<div id="about">
+		<div class="wrapper">
+			<div class="about-col1">
+				<h2>ABOUT</h2>
+				<img src="images/profile-image.jpg" align="middle">
+			</div>
+			<div class="about-col2">
+				<p>My name is Jayrex Acilo. I'm a growing web-developer from Cebu PH who is always seeking to expand my knowledge of everything on the web. I’m always looking for the best way to solve a problem, no matter the time or dedication that it requires. In my world, anything is possible. And if it’s not, I’ll find a way to make it so.</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="skills">
+		<div class="wrapper">
+			<h3>Skills</h3>
+			<p>I have a wide range of skills that include design (and working closely
+with designers), front-end development (HTML5, CSS3, Javascript/Jquery,
+ Responsive, UX), back-end development using open source 
+technologies,
+deployment and performance tuning (Apache and MySQL).</p>
+		</div>	
+	</div>
+
+	<div id="contact">
+		<div class="wrapper">
+			<h1>CONTACT</h1>
+			<p>I'm available for freelance contacts, so get in touch:</p>
+			<p class="contact-email">ajayrexluega@gmail.com</p>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$(".dropdown-menu").on("click", function(e){
+
+				$("header nav ul").toggleClass("open");
+				e.stopPropagation();
+    			return false;
+			});
+
+			$(document).click(function() {
+			    $('header nav ul').removeClass("open");
+			});
+			
+		});
+
+			
+	</script>
+
+</body>
+</html>
